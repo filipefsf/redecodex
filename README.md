@@ -33,6 +33,7 @@ https://github.com/filipefsf/redecodex/assets/107284442/1e68f566-a7d7-4f5c-93df-
 - `Biblioteca PHP`: utilização do composer PHP para instalação de dependências;
 - `HTML5`: utilizado para marcação de todas as páginas do website;
 - `CSS3`: utilizado para estilização de todas as páginas;
+- `JavaScript`: utilizado para alertas ao usuário como alert() em casos de erro;
 - `MySQL`: utilização de comandos de conexão e inserção no banco de dados além de protegê-lo contra ataques maliciosos;
 - `GitHub`: versionamento de código para a plataforma GitHub;
 - `Design Responsivo`: website funciona para diversos tipos de tela de forma que seu conteúdo é adaptado para suportar essa variabilidade.
