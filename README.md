@@ -102,10 +102,6 @@ https://github.com/filipefsf/redecodex/assets/107284442/2f84755e-64cf-4f03-963a-
 <p align="justify"> - O sistema ainda está em desenvolvimento e por isso o feed ainda é "genérico" e está em fase de construção;</p>
 
 <h2>🚩CONCLUSÃO</h2>
-<p align="justify"> - Este, com certeza, é o projeto mais completo ao qual tenho me dedicado nos últimos meses e tem me proporcionado um aprendizado gigantesco no que
+<p align="justify">   Este, com certeza, é o projeto mais completo ao qual tenho me dedicado nos últimos meses e tem me proporcionado um aprendizado gigantesco no que
                       se refere à estrutura de back-end (principalmente). Foi e tem sido muito divertido todo o processo desde a concepção totalmente original do nome
                       da rede até os desafios que tenho encontrado pelo caminho.</p>
-
-
-
-
