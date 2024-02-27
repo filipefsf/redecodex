@@ -37,7 +37,7 @@ https://github.com/filipefsf/redecodex/assets/107284442/1e68f566-a7d7-4f5c-93df-
 - `GitHub`: versionamento de código para a plataforma GitHub;
 - `Design Responsivo`: website funciona para diversos tipos de tela de forma que seu conteúdo é adaptado para suportar essa variabilidade.
 
-- <h2>💡 FUNCIONALIDADES DO PROJETO</h2>
+<h2>💡 FUNCIONALIDADES DO PROJETO</h2>
 
 - `Funcionalidade 1`: permitir ao usuário criar uma nova conta na Codex:
 <p align="center">
@@ -87,6 +87,24 @@ https://github.com/filipefsf/redecodex/assets/107284442/15cacb2d-8e17-40d5-bfb8-
 - `Funcionalidade 4`: permitir ao usuário sair da rede social através do botão 'Sair'. Obs.: se o usuário atualizar a página, a sessão não será "destruída":
 
 https://github.com/filipefsf/redecodex/assets/107284442/2f84755e-64cf-4f03-963a-a811446a7f7f
+
+- `Funcionalidade 5`: as senhas dos usuários devem ser encriptografadas para proteger contra ataques de hackers. O sistema poderá comparar se a senha inserida é igual a guardada no bando de dados, mas ela nunca mais poderá ser descriptografada. Para isso, utilizei a biblioteca Bcrypt do PHP conhecida por sua segurança no armazenamento de dados.
+
+- `Outras funcionalidades`: 
+<p align="justify"> - O usuário poderá realizar posts em seu feed pessoal;</p>
+<p align="justify"> - O usuário poderá adicionar amigos em sua rede social e visualizar seu feed;</p>
+<p align="justify"> - O usuário poderá visualizar seu próprio perfil e atualizar sua foto e descrição do perfil;</p>
+<p align="justify"> - <strong>DESAFIO</strong>: os usuários poderão interagir através de um chat.</p>
+
+<h2>OBSERVAÇÕES</h2>
+<p align="justify"> - Tenho ciência de que alguns "alertas" de erros soam anti-profissionais ou amadores através de mensagens de alerta por JavaScript, mas este tipo de 
+                      especificidade será observada posteriormente;</p>
+<p align="justify"> - O sistema ainda está em desenvolvimento e por isso o feed ainda é "genérico" e está em fase de construção;</p>
+
+<h2>🚩CONCLUSÃO</h2>
+<p align="justify"> - Este, com certeza, é o projeto mais completo ao qual tenho me dedicado nos últimos meses e tem me proporcionado um aprendizado gigantesco no que
+                      se refere à estrutura de back-end (principalmente). Foi e tem sido muito divertido todo o processo desde a concepção totalmente original do nome
+                      da rede até os desafios que tenho encontrado pelo caminho.</p>
 
 
 
