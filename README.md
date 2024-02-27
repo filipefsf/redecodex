@@ -65,8 +65,29 @@ https://github.com/filipefsf/redecodex/assets/107284442/1e68f566-a7d7-4f5c-93df-
 <p align="center">
 <img width="400" alt="Captura de Tela 2024-02-27 às 18 41 24" src="https://github.com/filipefsf/redecodex/assets/107284442/d0408e3a-36c6-4460-97da-aa4050333385">
 <img width="500" alt="Captura de Tela 2024-02-27 às 18 42 08" src="https://github.com/filipefsf/redecodex/assets/107284442/7f75e049-3945-4734-9632-0b722d019dbe">
-
-
 </p>
+
+- `Funcionalidade 2`: permitir ao usuário fazer login na rede Codex:
+<p align="center">
+<img width="700" alt="Captura de Tela 2024-02-27 às 18 45 09" src="https://github.com/filipefsf/redecodex/assets/107284442/4c81c378-8a71-4c17-86e0-9658b28c807f">
+</p>
+
+<p align="justify"> 2.1. O usuário deverá inserir um email e senha válidos, caso contrário, obterá os seguintes erros:</p>
+<p align="center">
+<img width="200" alt="Captura de Tela 2024-02-27 às 18 48 10" src="https://github.com/filipefsf/redecodex/assets/107284442/80cea438-94d5-4bbf-8850-3de9ee655572">
+<img width="200" alt="Captura de Tela 2024-02-27 às 18 48 27" src="https://github.com/filipefsf/redecodex/assets/107284442/d1544f75-15ac-45fb-ae8c-4ebd9086435e">
+<img width="200" alt="Captura de Tela 2024-02-27 às 18 48 46" src="https://github.com/filipefsf/redecodex/assets/107284442/fd87e471-bb30-43cf-a302-0b16f574d8a1">
+<img width="200" alt="Captura de Tela 2024-02-27 às 18 49 02" src="https://github.com/filipefsf/redecodex/assets/107284442/c40dc0af-6e43-4a78-ac70-e73616aa0b3f">
+</p>
+
+- `Funcionalidade 3`: permitir ao usuário gerenciar seu perfil após login:
+  
+https://github.com/filipefsf/redecodex/assets/107284442/15cacb2d-8e17-40d5-bfb8-61cd90ce7515
+
+- `Funcionalidade 4`: permitir ao usuário sair da rede social através do botão 'Sair'. Obs.: se o usuário atualizar a página, a sessão não será "destruída":
+
+https://github.com/filipefsf/redecodex/assets/107284442/2f84755e-64cf-4f03-963a-a811446a7f7f
+
+
 
 
