@@ -45,6 +45,13 @@ https://github.com/filipefsf/redecodex/assets/107284442/1e68f566-a7d7-4f5c-93df-
 <p align="justify"> 1.1. O usuário <strong>DEVE</strong> preencher <strong>TODOS</strong> os campos solicitados, caso contrário obterá o erro:</p>
 
 <p align="center">
-<img width="600" alt="Captura de Tela 2024-02-27 às 18 28 16" src="https://github.com/filipefsf/redecodex/assets/107284442/ca416193-1b35-4329-9c31-3071538c7bac">
+<img width="400" alt="Captura de Tela 2024-02-27 às 18 28 16" src="https://github.com/filipefsf/redecodex/assets/107284442/ca416193-1b35-4329-9c31-3071538c7bac">
 </p>
+
+<p align="justify"> 1.2. O usuário deve inserir um email ainda não cadastrado, caso contrário obterá um erro:</p>
+<img width="300" alt="Captura de Tela 2024-02-27 às 18 33 00" src="https://github.com/filipefsf/redecodex/assets/107284442/dbbe2783-255e-444f-921e-e478fcbb299f">
+<img width="300" alt="Captura de Tela 2024-02-27 às 18 34 50" src="https://github.com/filipefsf/redecodex/assets/107284442/c78a7d38-2b29-4840-89ef-541ee22ac83c">
+<img width="400" alt="Captura de Tela 2024-02-27 às 18 37 06" src="https://github.com/filipefsf/redecodex/assets/107284442/1c49de8c-ee61-493b-95cb-9e396cbed684">
+
+
 
