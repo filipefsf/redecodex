@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+@keyframes neon {
+    from {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.92),
+      0 0 30px rgba(202,228,225,0.34),
+      0 0 12px rgba(30,132,242,0.52),
+      0 0 21px rgba(30,132,242,0.92),
+      0 0 34px rgba(30,132,242,0.78),
+      0 0 54px rgba(30,132,242,0.92);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.98),
+      0 0 30px rgba(202,228,225,0.42),
+      0 0 12px rgba(30,132,242,0.58),
+      0 0 22px rgba(30,132,242,0.84),
+      0 0 38px rgba(30,132,242,0.88),
+      0 0 60px rgba(30,132,242,1);
+    }
+}
+
+html,body{
+    height:100%;
+    background-color: #d9d9d9;
+}
+
+.main-comunidade{
+    display: flex;
+    height: 100%;
+}
+
+.sidebar{
+    width:20%;
+    height:100%;
+    text-align: center;
+    background-color: black;
+}
+.sidebar h1{
+    color: white;
+    text-shadow: 3px 3px black;
+    font-size: 3.8vw;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.sidebar p{
+    color: white;
+    padding: 25px 8px;
+}
+
+.fa-xing{
+    color: #e1e1e1;
+    font-size: 20px;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+.sidebar h2{
+    color: white;
+    text-align: left;
+    padding-left: 13%;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.sidebar li{
+    color: white;
+    text-align: left;
+    padding-left: 14%;
+    margin-top: 30px;
+}
+
+.sidebar a{
+    text-decoration: none;
+}
+
+.sidebar a:hover{
+    animation: neon .08s ease-in-out infinite alternate;
+}
+
+.fa{
+    padding-right: 4%;
+}
+
+.finalSideBar{
+    margin-top: 100%;
+    width: 100%;
+}
+
+.logout{
+    width: 100%;
+    color: white;
+    text-align: left;
+    text-decoration: none; 
+}
+
+.direitos {
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.friendsAndCommunity{
+    width: 80%;
+    overflow-y: auto;
+    padding: 30px;
+}
+
+.friendsAndCommunity img{
+    width: 80px;
+    height: 80px;
+}
+.friends h2{
+    font-size: 22px;
+}
+
+.wraperFriends{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.friendsAuthor{
+    background-color: white;
+    width: 30%;
+    display: flex;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+.friendsAuthor h3{
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 13%;
+}
+
+.friendsAuthor p{
+    margin-top: 3px;
+    font-size: 13px;
+    color: #605f5f;
+    opacity: 0.6;
+}
+
+.friendsAuthorInfo{
+    margin-left: 6%;
+}
+
+.community{
+    margin-top: 80px;
+}
+
+.community h2{
+    font-size: 22px;
+}
+
+.wraperCommunity{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.communityAuthor{
+    background-color: white;
+    width: 30%;
+    display: flex;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+.communityAuthor h3{
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 2%;
+}
+
+.communityAuthor p{
+    margin-top: 3px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #605f5f;
+    opacity: 0.6;
+}
+
+.communityAuthorInfo{
+    margin-left: 6%;
+}
+
+.communityAuthorInfo a{
+    border: 1px solid rgb(9, 125, 227);
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(9, 125, 227);
+    padding: 5px;
+}
+
+.communityAuthorInfo a:hover{
+    border: 2px solid rgb(9, 125, 227);
+    font-weight: bold;
+}

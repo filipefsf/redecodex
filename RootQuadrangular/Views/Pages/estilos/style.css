@@ -1,0 +1,270 @@
+*{
+    margin:0;
+    left: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+@keyframes neon {
+    from {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.92),
+      0 0 30px rgba(202,228,225,0.34),
+      0 0 12px rgba(30,132,242,0.52),
+      0 0 21px rgba(30,132,242,0.92),
+      0 0 34px rgba(30,132,242,0.78),
+      0 0 54px rgba(30,132,242,0.92);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.98),
+      0 0 30px rgba(202,228,225,0.42),
+      0 0 12px rgba(30,132,242,0.58),
+      0 0 22px rgba(30,132,242,0.84),
+      0 0 38px rgba(30,132,242,0.88),
+      0 0 60px rgba(30,132,242,1);
+    }
+}
+
+body{
+    display: flex;
+}
+
+.lateralEsquerdaFundo{
+    height: 100vh;
+    width: 48%;
+    background-color: black;
+}
+.textos{
+    text-align: center;
+    padding-top: 14%;
+}
+
+.textos h1{
+    color: white;
+    text-shadow: 3px 3px black;
+    font-size: 6vw;
+    text-transform: uppercase;
+}
+
+.textos p{
+    width: 100%;
+    padding: 0 18%;
+    padding-top: 5%;
+    color: #e1e1e1;
+    text-align: center;
+    font-size: 1.8vw;
+    text-shadow: 1.5px 1.5px black;
+}
+
+.fa-xing{
+    color: #e1e1e1;
+    font-size: 20px;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+
+.textos h3{
+    color: #e1e1e1;
+    font-size: 18vw;
+    padding-top: 5%;
+}
+
+.lateralDireitaFundo{
+    width: 52%;
+    text-align: center;
+    background-color: #d9d9d9;
+}
+
+.formularioLogin{
+    width: 35vw;
+    height: 345px;
+    margin: 30% 17%;
+    padding-top: 3%;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.formularioLogin h2{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.formularioLogin input[type=text]{
+    width:29vw;
+    height:45px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+    box-shadow: 0px 3px 1px #D3D8E067;
+    border: 1px solid #EBEBEB;
+    background-color: white;
+}
+.formularioLogin input[type=password]{
+    width:29vw;
+    height:45px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: white;
+    box-shadow: 0px 3px 1px #D3D8E067;
+    border: 1px solid #EBEBEB;
+}
+.formularioLogin input[type=submit]{
+    width:29vw;
+    height:45px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    background: black 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 1px #1b1b1b;
+    border-radius: 10px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.linkRegistro{
+    width:29vw;
+    height:45px;
+    color:black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 3px 1px #D3D8E067;
+    border: 2px solid #000000;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    
+}
+
+.linkRegistro p{
+    margin: 2% 0;
+}
+
+.formularioLogin a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formularioRegistro{
+    margin-top: 20%;
+    height: 60%;
+}
+
+.formularioLoginMobile{
+    display: none;
+}
+
+@media screen and (max-width:1024px){
+    .lateralEsquerdaFundo{
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+    .lateralDireitaFundo{
+        width: 0%;
+    }
+    .formularioLogin{
+        display: none;
+    }
+    .formularioLoginMobile{
+        display: block;
+        width: 60%;
+        height: 360px;
+        padding-top: 1.5%;
+        margin: auto;
+        margin-top: 6%;
+        margin-bottom: 5%;
+        border-radius: 20px;
+        background-color: white;
+    }
+    .formularioLoginMobile h2{
+        margin-bottom: 15px;
+        font-size: 2vw;
+    }
+    .formularioLoginMobile a{
+        text-decoration: none;
+    }
+    
+    .formularioLoginMobile input[type=text]{
+        width: 90%;
+        height:45px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        padding-left: 10px;
+        font-size: 15px;
+        box-shadow: 0px 3px 1px #D3D8E067;
+        border: 1px solid #EBEBEB;
+        background-color: white;
+    }
+    .formularioLoginMobile input[type=password]{
+        width: 90%;
+        height:45px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        padding-left: 10px;
+        font-size: 15px;
+        background-color: white;
+        box-shadow: 0px 3px 1px #D3D8E067;
+        border: 1px solid #EBEBEB;
+    }
+    .formularioLoginMobile input[type=submit]{
+        width: 90%;
+        height:45px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        font-size: 15px;
+        color: white;
+        font-weight: bold;
+        background: black 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 1px #1b1b1b;
+        border-radius: 10px;
+        opacity: 1;
+    }
+    .textos h3{
+        display: none;
+    }
+    .textos{
+        padding-top: 3%;
+    }
+    .textos h1{
+        font-size: 10.5vw;
+    }
+    .textos p{
+        font-size: 2.6vw;
+        padding: 0 20%;
+        padding-top: 1%;
+    }
+    .linkRegistroMobile{
+        width:90%;
+        height:45px;
+        color:black;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0px 3px 1px #D3D8E067;
+        border: 2px solid #000000;
+        text-align: center;
+        margin: auto;
+        align-items: center;
+    }
+    .linkRegistroMobile p{
+        margin: 2% 0;
+        color:black;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+        text-shadow: none;
+        padding-top: 0;
+    }
+    .formularioRegistroMobile{
+        margin-top: 3%;
+        height: 64%;
+    }
+
+}

@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+@keyframes neon {
+    from {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.92),
+      0 0 30px rgba(202,228,225,0.34),
+      0 0 12px rgba(30,132,242,0.52),
+      0 0 21px rgba(30,132,242,0.92),
+      0 0 34px rgba(30,132,242,0.78),
+      0 0 54px rgba(30,132,242,0.92);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.98),
+      0 0 30px rgba(202,228,225,0.42),
+      0 0 12px rgba(30,132,242,0.58),
+      0 0 22px rgba(30,132,242,0.84),
+      0 0 38px rgba(30,132,242,0.88),
+      0 0 60px rgba(30,132,242,1);
+    }
+}
+
+html,body{
+    height:100%;
+    background-color: #d9d9d9;
+}
+
+.main-feed{
+    display: flex;
+    height: 100%;
+}
+
+.sidebar{
+    width:20%;
+    height:100%;
+    text-align: center;
+    background-color: black;
+}
+.sidebar h1{
+    color: white;
+    text-shadow: 3px 3px black;
+    font-size: 3.8vw;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.sidebar p{
+    color: white;
+    padding: 25px 8px;
+}
+
+.fa-xing{
+    color: #e1e1e1;
+    font-size: 20px;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+.sidebar h2{
+    color: white;
+    text-align: left;
+    padding-left: 13%;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.sidebar li{
+    color: white;
+    text-align: left;
+    padding-left: 14%;
+    margin-top: 30px;
+}
+
+.sidebar a{
+    text-decoration: none;
+}
+
+.sidebar a:hover{
+    animation: neon .08s ease-in-out infinite alternate;
+}
+
+.fa{
+    padding-right: 4%;
+}
+
+.finalSideBar{
+    margin-top: 100%;
+    width: 100%;
+}
+
+.logout{
+    width: 100%;
+    color: white;
+    text-align: left;
+    text-decoration: none; 
+}
+
+.direitos {
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.feed{
+    width: 80%;
+    overflow-y: auto;
+    display: flex;
+}
+.wraper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    padding: 70px 40px;
+    margin-left: 2%;
+}
+
+.singlePost{
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 6%;
+}
+
+.postAuthor{
+    display: flex;
+}
+
+.postAuthor img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.postAuthor h3{
+    font-size: 17px;
+    width: 100%;
+}
+
+.postAuthorInfo{
+    margin-top: 7px;
+    margin-left: 9px;
+}
+
+.postAuthor p{
+    margin-top: 3px;
+    font-size: 13px;
+    color: #605f5f;
+    opacity: 0.6;
+}
+
+.conteudoPost img{
+    width: 250px;
+    height: 150px;
+    border-radius: 0;
+    padding: 0 1%;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.conteudoPost p{
+    color: #605f5f;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+.friendsRequest{
+    width: 22%;
+    height:max-content;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 70px;
+    text-align: center;
+    margin-left: 2%;
+}
+
+.friendsRequestSingle{
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #ccc;
+}
+
+.friendsRequestSingle img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.friendRequestSingleInfo{
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.friendRequestSingleInfo h5{
+    width: 100%;
+    font-weight: normal;
+}
+
+.friendRequestSingleInfo a{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.addFriend{
+    text-decoration:none;
+    color: green;
+}
+
+.addFriend:hover{
+    text-decoration: underline;
+}
+
+.rejFriend{
+    text-decoration:none;
+    color: red;
+}
+
+.rejFriend:hover{
+    text-decoration: underline;
+}

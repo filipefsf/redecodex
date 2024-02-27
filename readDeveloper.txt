@@ -1,0 +1,29 @@
+1) rootQuadrangular é a pasta raiz do projeto;
+    1.1) Respoonsavel por classes e logicas do MVC
+
+2) Utilização de padrão de projeto MVC:
+    - M: Models
+    - V: Views
+    - C: controllers
+    O princípio básico do MVC é a divisão da aplicação em três camadas: 
+        a camada de interação do usuário (view), 
+        a camada de manipulação dos dados (model) e 
+        a camada de controle (controller).
+
+    Com o MVC, é possível separar o código relativo à interface do usuário das regras de negócio, o que sem 
+    dúvida traz muitas vantagens.
+
+3) Pasta .htacess é muito importante
+
+4) Usa-se o carregamento de páginas dinâmicos utilizando SR4
+    4.1) A ideia é carregar as classes;
+    4.2) Ao instalar uma biblioteca ou biblioteca utilizando composer desejamos que as classes sejam lidas de acordo com nosso desejo
+    4.3) Inclusao dinamica de classes é o que queremos
+
+5) Em localhost/phpmyadmin, criei um banco de dados:
+    5.1) Primeiramente criei um novo banco chamado de rede_codex
+    5.2) Depois criei uma tabela de usuários para guardar os cadastros
+    5.3) ID auto incremento, nome VARCHAR-255, email VARCHAR-255 e senha TEXT
+    5.4) Utilizei uma classe auxiliar chamada de Bcrypt
+
+
