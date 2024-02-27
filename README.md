@@ -49,9 +49,24 @@ https://github.com/filipefsf/redecodex/assets/107284442/1e68f566-a7d7-4f5c-93df-
 </p>
 
 <p align="justify"> 1.2. O usuário deve inserir um email ainda não cadastrado, caso contrário obterá um erro:</p>
+<p align="center">
 <img width="300" alt="Captura de Tela 2024-02-27 às 18 33 00" src="https://github.com/filipefsf/redecodex/assets/107284442/dbbe2783-255e-444f-921e-e478fcbb299f">
 <img width="300" alt="Captura de Tela 2024-02-27 às 18 34 50" src="https://github.com/filipefsf/redecodex/assets/107284442/c78a7d38-2b29-4840-89ef-541ee22ac83c">
 <img width="400" alt="Captura de Tela 2024-02-27 às 18 37 06" src="https://github.com/filipefsf/redecodex/assets/107284442/1c49de8c-ee61-493b-95cb-9e396cbed684">
+</p>
 
+<p align="justify"> 1.3. O usuário deverá inserir uma senha de, pelo menos, 6 dígitos, caso contrário, obterá o seguinte erro:</p>
+<p align="center">
+<img width="300" alt="Captura de Tela 2024-02-27 às 18 39 10" src="https://github.com/filipefsf/redecodex/assets/107284442/09bd6b52-df18-4e6a-8fa5-57d42cdee01b">
+<img width="300" alt="Captura de Tela 2024-02-27 às 18 40 15" src="https://github.com/filipefsf/redecodex/assets/107284442/0d58e92a-5f59-4625-83ab-a1476d75eb4c">
+</p>
+
+<p align="justify"> 1.4. O usuário deverá repetir a senha <strong>CORRETAMENTE</strong>, caso contrário, obterá o seguinte erro:</p>
+<p align="center">
+<img width="400" alt="Captura de Tela 2024-02-27 às 18 41 24" src="https://github.com/filipefsf/redecodex/assets/107284442/d0408e3a-36c6-4460-97da-aa4050333385">
+<img width="500" alt="Captura de Tela 2024-02-27 às 18 42 08" src="https://github.com/filipefsf/redecodex/assets/107284442/7f75e049-3945-4734-9632-0b722d019dbe">
+
+
+</p>
 
 
