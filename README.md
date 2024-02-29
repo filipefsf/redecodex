@@ -89,7 +89,7 @@ https://github.com/filipefsf/redecodex/assets/107284442/15cacb2d-8e17-40d5-bfb8-
 
 https://github.com/filipefsf/redecodex/assets/107284442/2f84755e-64cf-4f03-963a-a811446a7f7f
 
-- `Funcionalidade 5`: as senhas dos usuários devem ser encriptografadas para proteger contra ataques de hackers. O sistema poderá comparar se a senha inserida é igual a guardada no bando de dados, mas ela nunca mais poderá ser descriptografada. Para isso, utilizei a biblioteca Bcrypt do PHP conhecida por sua segurança no armazenamento de dados.
+- `Funcionalidade 5`: as senhas dos usuários devem ser encriptografadas para proteger contra ataques de hackers. O sistema poderá comparar se a senha inserida é igual a guardada no banco de dados, mas ela nunca mais poderá ser descriptografada. Para isso, utilizei a biblioteca Bcrypt do PHP conhecida por sua segurança no armazenamento de dados.
 
 - `Outras funcionalidades`: 
 <p align="justify"> - O usuário poderá realizar posts em seu feed pessoal;</p>
