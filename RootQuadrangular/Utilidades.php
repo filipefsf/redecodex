@@ -19,6 +19,14 @@
         public static function sucesso(){
             echo '<script>mostrarMensagemSucesso();</script>';
         }
+
+        public static function fracassoEmail(){
+            echo '<script>mostrarMensagemEmailInvalido();</script>';
+        }
+
+        public static function fracassoSenha($local){
+            echo '<script>mostrarMensagemSenhaInvalida('.$local.');</script>';
+        }
     }
 
 ?>

@@ -13,8 +13,12 @@
 
 <body>
     <?php 
-        //inclusão dinâmica da overlay que será utilizada em caso de sucesso no cadastro
+        //inclusão dinâmica da overlay que será utilizada em caso de sucesso ou fracasso no cadastro
         include('includes/overlay.php'); 
+        include('includes/overlayEmail.php');
+        include('includes/overlaySenha.php');
+        include('includes/overlaySenhaVal.php');
+        include('includes/overlaySenhaCaracter.php');
     ?>
 
     <div class="lateralEsquerdaFundo">

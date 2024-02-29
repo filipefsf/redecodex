@@ -12,6 +12,11 @@
 </head>
 
 <body>
+    <?php 
+        //inclusão dinâmica da overlay que será utilizada em caso de sucesso ou fracasso no cadastro
+        include('includes/overlaySenha.php'); 
+        include('includes/overlayEmail.php');
+    ?>
     <div class="lateralEsquerdaFundo">
         <div class="textos">
             <h1>Code <i class="fa fa-xing" aria-hidden="true"></i></h1>
@@ -45,5 +50,6 @@
                 </a>
             </form><!--formularioLogin-->
     </div><!--lateralDireitaFundo-->
+    <script src="<?php echo INCLUDE_PATH ?>js/scripts.js"></script>
 </body>
 </html>

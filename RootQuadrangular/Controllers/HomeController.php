@@ -44,8 +44,12 @@
                     $verifica->execute(array($email));
 
                     if($verifica->rowCount() == 0){
-                        \RootQuadrangular\Utilidades::alerta('Usuário não cadastrado!');
-                        \RootQuadrangular\Utilidades::redirect(INCLUDE_PATH);
+                        \RootQuadrangular\Utilidades::fracassoEmail(); 
+                        echo '<script>
+                                setTimeout(function() {
+                                    window.location.href = "'.INCLUDE_PATH.'";
+                                }, 3000); // Redireciona após 3 segundos
+                            </script>';
                     }
 
                     //Verificação de senha no Banco de Dados com uso do método check da dependência Bcrypt
@@ -60,8 +64,12 @@
                             $_SESSION['nome'] = $nomeArray[0];
                             \RootQuadrangular\Utilidades::redirect(INCLUDE_PATH);  
                         } else {
-                            \RootQuadrangular\Utilidades::alerta('Senha incorreta!');
-                            \RootQuadrangular\Utilidades::redirect(INCLUDE_PATH);          
+                            \RootQuadrangular\Utilidades::fracassoSenha("'login'");
+                            echo '<script>
+                                    setTimeout(function() {
+                                        window.location.href = "'.INCLUDE_PATH.'";
+                                    }, 3000); // Redireciona após 3 segundos
+                                </script>';
                         }
                     }
                 }
