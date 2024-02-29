@@ -25,7 +25,9 @@
 <p align="justify"> Veja abaixo um demonstrativo do sistema em funcionamento. Lembrando que o projeto ainda se encontra em fase de desenvolvimento e algumas funções são 
                     puramente ilustrativas:</p>
 
-https://github.com/filipefsf/redecodex/assets/107284442/1e68f566-a7d7-4f5c-93df-b07f8b9401f5
+
+https://github.com/filipefsf/redecodex/assets/107284442/01599bf2-358b-4d6f-8be2-a079abab2b77
+
 
 <h2>⚙️ TECNOLOGIAS UTILIZADAS</h2>
 
