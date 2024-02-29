@@ -25,7 +25,9 @@
 <p align="justify"> Veja abaixo um demonstrativo do sistema em funcionamento. Lembrando que o projeto ainda se encontra em fase de desenvolvimento e algumas funções são 
                     puramente ilustrativas:</p>
 
-https://github.com/filipefsf/redecodex/assets/107284442/1e68f566-a7d7-4f5c-93df-b07f8b9401f5
+
+https://github.com/filipefsf/redecodex/assets/107284442/01599bf2-358b-4d6f-8be2-a079abab2b77
+
 
 <h2>⚙️ TECNOLOGIAS UTILIZADAS</h2>
 
@@ -89,7 +91,7 @@ https://github.com/filipefsf/redecodex/assets/107284442/15cacb2d-8e17-40d5-bfb8-
 
 https://github.com/filipefsf/redecodex/assets/107284442/2f84755e-64cf-4f03-963a-a811446a7f7f
 
-- `Funcionalidade 5`: as senhas dos usuários devem ser encriptografadas para proteger contra ataques de hackers. O sistema poderá comparar se a senha inserida é igual a guardada no bando de dados, mas ela nunca mais poderá ser descriptografada. Para isso, utilizei a biblioteca Bcrypt do PHP conhecida por sua segurança no armazenamento de dados.
+- `Funcionalidade 5`: as senhas dos usuários devem ser encriptografadas para proteger contra ataques de hackers. O sistema poderá comparar se a senha inserida é igual a guardada no banco de dados, mas ela nunca mais poderá ser descriptografada. Para isso, utilizei a biblioteca Bcrypt do PHP conhecida por sua segurança no armazenamento de dados.
 
 - `Outras funcionalidades`: 
 <p align="justify"> - O usuário poderá realizar posts em seu feed pessoal;</p>
