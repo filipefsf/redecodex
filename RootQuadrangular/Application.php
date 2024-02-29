@@ -2,6 +2,7 @@
 
     namespace RootQuadrangular;
     // Classe será chamada quando usuário entrar para definir para onde ele deve ir
+    
     class Application{
         private $controller;
 

@@ -24,7 +24,7 @@
                 <input type="submit" value="Entrar" action="acao">
                 <input type="hidden" name="login">
                 <a href="<?php echo INCLUDE_PATH ?>registrar">
-                    <div class="linkRegistro">
+                    <div class="linkRegistroMobile">
                         <p>Criar nova conta</p>
                     </div>
                 </a>

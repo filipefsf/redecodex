@@ -17,8 +17,6 @@
                 //renderiza a home do usuário
                 \RootQuadrangular\Views\MainView::render('home');
             } else {
-                //renderiza para criar a conta.
-
                 if(isset($_POST['login'])){         //usuário tentando logar
                     $email = $_POST['email'];
                     $senha = $_POST['senha'];
@@ -38,6 +36,7 @@
                             //Usuário logado com sucesso!
                             $nomeArray = explode(' ',$dados['nome']);
                             $_SESSION['login'] = $dados['email'];
+                            $_SESSION['id'] = $dados['id'];
                             $_SESSION['nome'] = $nomeArray[0];
                             \RootQuadrangular\Utilidades::redirect(INCLUDE_PATH);  
                         } else {

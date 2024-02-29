@@ -134,7 +134,7 @@ html,body{
 
 .friendsAuthor h3{
     width: 100%;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     margin-top: 13%;
 }
@@ -173,7 +173,7 @@ html,body{
 
 .communityAuthor h3{
     width: 100%;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     margin-top: 2%;
 }
@@ -201,4 +201,28 @@ html,body{
 .communityAuthorInfo a:hover{
     border: 2px solid rgb(9, 125, 227);
     font-weight: bold;
+}
+
+#solicitacaoEnviada{
+    color: black;
+    border: 1px solid black;
+    cursor:default;
+    background-color: rgba(245, 229, 8, 0.915);
+}
+
+#solicitacaoEnviada:hover{
+    border: 1px solid black;
+    font-weight: normal; 
+}
+
+#aceitarAmizade{
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(6, 191, 6);
+}
+
+#recusarAmizade{
+    color: black;
+    border: 1px solid black;
+    background-color: rgba(255, 0, 0, 0.885);
 }
