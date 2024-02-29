@@ -12,6 +12,11 @@
 </head>
 
 <body>
+    <?php 
+        //inclusão dinâmica da overlay que será utilizada em caso de sucesso no cadastro
+        include('includes/overlay.php'); 
+    ?>
+
     <div class="lateralEsquerdaFundo">
         <div class="textos">
             <h1>Code <i class="fa fa-xing" aria-hidden="true"></i></h1>
@@ -28,11 +33,11 @@
                 <a href="<?php echo INCLUDE_PATH ?>">
                     <div class="linkRegistroMobile">
                         <p>Já tenho uma conta!</p>
-                    </div>
+                    </div><!--linkRegistroMobile-->
                 </a>
-            </form>
-        </div>
-    </div>
+            </form><!--formularioLoginMobile-->
+        </div><!--textos-->
+    </div><!--lateralEsquerdaFundo-->
     <div class="lateralDireitaFundo">
             <form class="formularioRegistro formularioLogin" action="" method="post">
                 <h2>Quase lá... Crie sua conta já!<br> É fácil, rápido e seguro...</h2>
@@ -45,10 +50,11 @@
                 <a href="<?php echo INCLUDE_PATH ?>">
                     <div class="linkRegistro">
                         <p>Já tenho uma conta!</p>
-                    </div>
+                    </div><!--linkRegistro-->
                 </a>
-            </form>
-    </div>
+            </form><!--formularioRegistro-->
+    </div><!--lateralDireitaFundo-->
 
+    <script src="<?php echo INCLUDE_PATH ?>js/scripts.js"></script>
 </body>
 </html>

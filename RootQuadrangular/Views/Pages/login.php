@@ -26,11 +26,11 @@
                 <a href="<?php echo INCLUDE_PATH ?>registrar">
                     <div class="linkRegistroMobile">
                         <p>Criar nova conta</p>
-                    </div>
+                    </div><!--linkRegistroMobile-->
                 </a>
-            </form>
-        </div>
-    </div>
+            </form><!--formularioLoginMobile-->
+        </div><!--textos-->
+    </div><!--lateralEsquerdaFundo-->
     <div class="lateralDireitaFundo">
             <form class= "formularioLogin" action="" method="post">
                 <h2>Faça seu login <br>ou registre-se!</h2>
@@ -41,10 +41,9 @@
                 <a href="<?php echo INCLUDE_PATH ?>registrar">
                     <div class="linkRegistro">
                         <p>Criar nova conta</p>
-                    </div>
+                    </div><!--linkRegistro-->
                 </a>
-            </form>
-    </div>
-
+            </form><!--formularioLogin-->
+    </div><!--lateralDireitaFundo-->
 </body>
 </html>

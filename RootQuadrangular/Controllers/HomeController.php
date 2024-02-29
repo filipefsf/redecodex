@@ -2,34 +2,54 @@
 
     namespace RootQuadrangular\Controllers;
 
+    //Classe que executará as ações do controlador como renderizar páginas e chamar métodos do banco de dados
     class HomeController{
-        //executa as ações do controlador: renderizar, p.e.
+
         public function index(){
 
-            if(isset($_GET['loggout'])){
+            //Caso exista uma solicitação URL de loggout, encerra-se a sessão e renderiza-se a página de login
+            if(isset($_GET['loggout'])){                               
                 session_unset();
                 session_destroy();
                 \RootQuadrangular\Utilidades::redirect(INCLUDE_PATH);
             }
-            
-            //Dependendo se é a tela de registrar ou não, carrega-se uma ou outra página
+
+            //Caso exista um usuário logado, efetua as demais ações do controlador dentro da página home
             if(isset($_SESSION['login'])){
-                //renderiza a home do usuário
-                \RootQuadrangular\Views\MainView::render('home');
-            } else {
-                if(isset($_POST['login'])){         //usuário tentando logar
+                
+                //Controla as solicitações de amizade na aba 'Feed' checando se existe algum target.
+                if(isset($_GET['targetAccepted'])){
+                    $targetAmizade = (int)$_GET['targetAccepted'];                  //coleta apenas a parte inteira da solicitação GET na URL que contém a informação do usuário que pediu amizade
+                    \RootQuadrangular\Models\AmizadesModel::aceitaSolicitacaoAmizade($targetAmizade);
+                } else if(isset($_GET['targetRejected'])){
+                    $targetAmizade = (int)$_GET['targetRejected'];
+                    \RootQuadrangular\Models\AmizadesModel::deletaSolicitacaoAmizade($targetAmizade);
+                }
+
+                //renderiza a home do usuário logado
+                \RootQuadrangular\Views\MainView::render('home'); 
+            } 
+
+            //Caso não exista uma sessão ativa, renderiza a página de login.
+            else {
+                \RootQuadrangular\Views\MainView::render('login');
+
+                //Caso exista um POST, usuário está tentando logar. Opção de POST para proteger dados do usuário.
+                if(isset($_POST['login'])){         
                     $email = $_POST['email'];
                     $senha = $_POST['senha'];
 
-                    //Verificação no Banco de Dados
+                    //Verificação de email no Banco de Dados. Uso de prepare + execute para proteção contra SQL Injection.
                     $verifica = \RootQuadrangular\MySQL::connect()->prepare("SELECT * FROM usuarios WHERE email = ?");
                     $verifica->execute(array($email));
 
                     if($verifica->rowCount() == 0){
-                        //Usuário não existe!
                         \RootQuadrangular\Utilidades::alerta('Usuário não cadastrado!');
                         \RootQuadrangular\Utilidades::redirect(INCLUDE_PATH);
-                    } else {
+                    }
+
+                    //Verificação de senha no Banco de Dados com uso do método check da dependência Bcrypt
+                    else {
                         $dados = $verifica->fetch();
                         $senhaBanco = $dados['senha'];
                         if(\RootQuadrangular\Bcrypt::check($senha,$senhaBanco)){
@@ -45,7 +65,6 @@
                         }
                     }
                 }
-                \RootQuadrangular\Views\MainView::render('login');
             }
         }
     }

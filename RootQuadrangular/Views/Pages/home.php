@@ -14,6 +14,7 @@
 <body>
     <div class="main-feed">
         <?php
+            //inclusão dinâmica da sidebar que será a mesma em Feed, Perfil e Comunidade
             include('includes/sidebar.php');
         ?>
         <div class="feed">
@@ -24,8 +25,8 @@
                         <div class="postAuthorInfo">
                             <h3>Fulano da Silva</h3>
                             <p>20:34 20/01</p>
-                        </div>
-                    </div>
+                        </div><!--postAuthorInfo-->
+                    </div><!--postAuthor-->
                     <div class="conteudoPost">
                         <p>Lorem Ipsum contant anshu ahsu qyuoo fiuo fkfpe Lorem Ipsum contant 
                             anshu ahsu qyuoo fiuo fkfpe Lorem Ipsum contant anshu ahsu qyuoo fiuo fkfpe.
@@ -33,91 +34,27 @@
                         </p>
                         <img src="<?php echo INCLUDE_PATH_STATIC?>Images/exemplopost1.jpg" />
                         <img src="<?php echo INCLUDE_PATH_STATIC?>Images/exemplopost2.jpg" />
-                    </div>
-                </div>
-                <div class="singlePost">
-                    <div class="postAuthor">
-                        <img src="<?php echo INCLUDE_PATH_STATIC?>Images/avatar.jpg" />
-                        <div class="postAuthorInfo">
-                            <h3>Fulano da Silva</h3>
-                            <p>20:34 20/01</p>
-                        </div>
-                    </div>
-                    <div class="conteudoPost">
-                        <p>Lorem Ipsum contant anshu ahsu qyuoo fiuo fkfpe Lorem Ipsum contant 
-                            anshu ahsu qyuoo fiuo fkfpe Lorem Ipsum contant anshu ahsu qyuoo fiuo fkfpe.
-                            Lorem Ipsum contant anshu ahsu qyuoo fiuo fkfpe. </p>
-                    </div>
-                </div>
-                <div class="singlePost">
-                    <div class="postAuthor">
-                        <img src="<?php echo INCLUDE_PATH_STATIC?>Images/avatar.jpg" />
-                        <div class="postAuthorInfo">
-                            <h3>Fulano da Silva</h3>
-                            <p>20:34 20/01</p>
-                        </div>
-                    </div>
-                    <div class="conteudoPost">
-                        <p>Lorem Ipsum contant anshu ahsu qyuoo fiuo fkfpe Lorem Ipsum contant 
-                            anshu ahsu qyuoo fiuo fkfpe Lorem Ipsum contant anshu ahsu qyuoo fiuo fkfpe.
-                            Lorem Ipsum contant anshu ahsu qyuoo fiuo fkfpe. </p>
-                    </div>
-                </div>
-                <div class="singlePost">
-                    <div class="postAuthor">
-                        <img src="<?php echo INCLUDE_PATH_STATIC?>Images/avatar.jpg" />
-                        <div class="postAuthorInfo">
-                            <h3>Fulano da Silva</h3>
-                            <p>20:34 20/01</p>
-                        </div>
-                    </div>
-                    <div class="conteudoPost">
-                        <p>Lorem Ipsum contant anshu ahsu qyuoo fiuo fkfpe Lorem Ipsum contant 
-                            anshu ahsu qyuoo fiuo fkfpe Lorem Ipsum contant anshu ahsu qyuoo fiuo fkfpe.
-                            Lorem Ipsum contant anshu ahsu qyuoo fiuo fkfpe. </p>
-                    </div>
-                </div>
-                <div class="singlePost">
-                    <div class="postAuthor">
-                        <img src="<?php echo INCLUDE_PATH_STATIC?>Images/avatar.jpg" />
-                        <div class="postAuthorInfo">
-                            <h3>Fulano da Silva</h3>
-                            <p>20:34 20/01</p>
-                        </div>
-                    </div>
-                    <div class="conteudoPost">
-                        <p>Lorem Ipsum contant anshu ahsu qyuoo fiuo fkfpe Lorem Ipsum contant 
-                            anshu ahsu qyuoo fiuo fkfpe Lorem Ipsum contant anshu ahsu qyuoo fiuo fkfpe.
-                            Lorem Ipsum contant anshu ahsu qyuoo fiuo fkfpe. </p>
-                    </div>
-                </div>
-            </div>
+                    </div><!--conteudoPost-->
+                </div><!--singlepost-->
+            </div><!--wraper-->
             <div class="friendsRequest">
                 <h4>Solicitações</h4>
+                <?php
+                    $solicitacoes = \RootQuadrangular\Models\AmizadesModel::listarSolicitacoes($_SESSION['id']);
+                    foreach ($solicitacoes as $chave => $valor) {
+                ?>
                 <div class="friendsRequestSingle">
                     <img src="<?php echo INCLUDE_PATH_STATIC?>Images/avatar.jpg" />
                     <div class="friendRequestSingleInfo">
-                        <h5>Ciclano Ferreira</h5>
-                        <p><a class="addFriend" href="">Aceitar</a> | <a class="rejFriend" href="">Recusar</a></p>
+                        <h5><?php echo $valor['nome'];?></h5>
+                        <p><a class="addFriend" href="<?php echo INCLUDE_PATH?>?targetAccepted=<?php echo $valor['enviou'];?>">Aceitar</a> | 
+                            <a class="rejFriend" href="<?php echo INCLUDE_PATH?>?targetRejected=<?php echo $valor['enviou'];?>">Recusar</a></p>
                     </div>
-                </div>
-                <div class="friendsRequestSingle">
-                    <img src="<?php echo INCLUDE_PATH_STATIC?>Images/avatar.jpg" />
-                    <div class="friendRequestSingleInfo">
-                        <h5>Neresmo Torres</h5>
-                        <p><a class="addFriend" href="">Aceitar</a> | <a class="rejFriend" href="">Recusar</a></p>
-                    </div>
-                </div>
-                <div class="friendsRequestSingle">
-                    <img src="<?php echo INCLUDE_PATH_STATIC?>Images/avatar.jpg" />
-                    <div class="friendRequestSingleInfo">
-                        <h5>Adrivaldo Caetano</h5>
-                        <p><a class="addFriend" href="">Aceitar</a> | <a class="rejFriend" href="">Recusar</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                </div><!--friendsRequestSingle-->
+                <?php }?>
+            </div><!--friendsRequest-->
+        </div><!---feed--->
+    </div><!--main-feed-->
 </body>
 
 </html>

@@ -14,6 +14,7 @@
 <body>
     <div class="main-comunidade">
         <?php
+            //inclusão dinâmica da sidebar que será a mesma em Feed, Perfil e Comunidade
             include('includes/sidebar.php');
         ?>
         <div class="friendsAndCommunity">
@@ -21,52 +22,57 @@
                 <h2>Amigos</h2>
                 <div class="wraperFriends">
                     <?php
+                        //listagem de amigos na aba 'Comunidade'. Com o if, ele não lista quem não é amigo!
                         $comunidade = \RootQuadrangular\Models\UsuariosModel::listarComunidade();
                         foreach ($comunidade as $chave => $valor) {
-                            if((\RootQuadrangular\Models\AmizadesModel::verificaSolicitacaoAmizade($valor['id'])) != "amigos") continue; //não lista quem não é amigo
+                            if((\RootQuadrangular\Models\AmizadesModel::verificaSolicitacaoAmizade($valor['id'])) != "amigos") continue;
                     ?>
                     <div class="friendsAuthor">
                         <img src="<?php echo INCLUDE_PATH_STATIC?>Images/avatar.jpg" />
                         <div class="friendsAuthorInfo">
                             <h3><?php echo $valor['nome'];?></h3>
                             <p><?php echo $valor['email'];?></p>
-                        </div>
-                    </div>
+                        </div><!--friendsAuthorInfo-->
+                    </div><!--friendsAuthor-->
                 <?php } ?>
-                </div>
-            </div>
+                </div><!--wraperFriends-->
+            </div><!--friends-->
             <div class="community">
                 <h2>Comunidade</h2>
                 <div class="wraperCommunity">
                     <?php
+                        //mostra toda a comunidade para o usuário exceto a si mesmo
                         $comunidade = \RootQuadrangular\Models\UsuariosModel::listarComunidade();
                         foreach ($comunidade as $chave => $valor) {
-                            if($valor['email'] == $_SESSION['login']) continue; //não sugere a si próprio na amizade.
+                            if($valor['email'] == $_SESSION['login']) continue;
                     ?>
                     <div class="communityAuthor">
                         <img src="<?php echo INCLUDE_PATH_STATIC?>Images/avatar.jpg" />
                         <div class="communityAuthorInfo">
                             <h3><?php echo $valor['nome'];?></h3>
                             <p><?php echo $valor['email'];?></p>
+
                             <?php if((\RootQuadrangular\Models\AmizadesModel::verificaSolicitacaoAmizade($valor['id'])) == ""){ ?>
+                                <!--Não existe solicitação de amizade-->
                                 <a href="<?php echo INCLUDE_PATH?>comunidade?solicitarAmizade=<?php echo $valor['id'];?>">Solicitar amizade</a>
                             <?php } else if((\RootQuadrangular\Models\AmizadesModel::verificaSolicitacaoAmizade($valor['id'])) == "enviado") { ?>
+                                <!--O usuário já enviou um pedido de amizade-->
                                 <a id="solicitacaoEnviada" href="#">Solicitação Enviada!</a>
                             <?php } else if((\RootQuadrangular\Models\AmizadesModel::verificaSolicitacaoAmizade($valor['id'])) == "recebido"){  ?>
+                                <!--O usuário recebeu uma solicitação de amizade-->
                                 <a id="aceitarAmizade" href="<?php echo INCLUDE_PATH?>comunidade?targetAccepted=<?php echo $valor['id'];?>">Aceitar</a>
                                 <a id="recusarAmizade" href="<?php echo INCLUDE_PATH?>comunidade?targetRejected=<?php echo $valor['id'];?>">Recusar</a>
                             <?php } else if((\RootQuadrangular\Models\AmizadesModel::verificaSolicitacaoAmizade($valor['id'])) == "amigos"){ ?>
+                                <!--O usuário já é amigo deste-->
                                 <a id="amigos" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Amigos</a>
                             <?php } ?>
-                        </div>
-                    </div>
-
+                        </div><!--communityAuthorInfo-->
+                    </div><!--communityAuthor-->
                     <?php } ?>
-
-                </div>
-            </div>
-        </div>
-    </div>
+                </div><!--wraperCommunity-->
+            </div><!--community-->
+        </div><!--friendsAndCommunity-->
+    </div> <!--main-comunidade-->
 </body>
 
 </html>
